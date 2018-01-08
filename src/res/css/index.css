@@ -1,0 +1,46 @@
+.cl:after,.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.cl,.clearfix{zoom:1}
+.l{float: left}
+.r{float: right}
+.vCenter{position: absolute;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);-o-transform: translateY(-50%);-ms-transform: translateY(-50%);}
+#section input::-webkit-input-placeholder{color:#b2b2b2;}
+*{box-sizing: border-box;}
+body, th, td, button, input, select, textarea{font-family: "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", Helvetica, tahoma, arial, Verdana, sans-serif, "WenQuanYi Micro Hei", "\5B8B\4F53"}
+body{position: relative}
+#header{height: 94px;line-height: 94px;}
+.container{width: 1100px;margin: 0 auto;}
+#header #logo{width: 417px;}
+#header .btn{margin-top: 56px;}
+#header .btn li{display: inline-block}
+#header .btn a{font-size: 12px;color: #b3b3b3;margin-top: 98px;}
+#header .btn .line{width: 1px;background: #b3b3b3;height: 10px;display: inline-block;margin: 0 10px;}
+#section{height: 847px;background: url("../img/bg.jpg") no-repeat center;width: 100%;min-width: 1100px;background-size: cover}
+#section .container{position: relative}
+#section .boxBig{position: absolute;top: 170px;right: 0;text-align: center;}
+#section .boxBig>img{margin-bottom: 30px;}
+#section .boxSmall{width: 346px;height: 390px;background: #fff;border-radius: 6px;overflow: hidden}
+#section .title{font-size:18px;color: #0088e1;width: 100%;text-align: center;margin-bottom: 32px;font-weight: 600;height: 64px;line-height: 64px;background: #fcfcfc;border-bottom: 1px solid #dcdcdc}
+#section .title span{border-bottom: 2px solid #0088e1;padding-bottom: 18px;
+}
+#section .con{width: 100%;padding:0 30px;}
+#section .username,#section .password{height: 44px;width: 100%;border:1px solid #e5e5e5;margin-bottom: 16px;border-radius: 4px;line-height: 42px;padding: 0 10px;background: #fcfcfc}
+#section .username input,#section .password input{border: 0;padding: 0 10px;width: 240px;float: right;height: 42px;line-height: 33px;font-size: 14px;background: #fcfcfc}
+#section .code{margin-bottom: 30px;}
+#section .code input{width: 160px;height: 44px;border:1px solid #e5e5e5;border-radius: 4px;line-height: 33px;font-size: 14px;padding: 0 14px;;margin-right: 18px;display: inline-block;background: #fcfcfc}
+#section .code .codeImg{border: 1px solid #e5e5e5;width: 108px;height: 44px;display: inline-block;border-radius: 4px;overflow: hidden}
+#section .submit{height: 44px;line-height: 44px;width: 100%;text-align: center;font-size: 16px;background: #0088e1;color: #fff;border-radius: 4px;margin-bottom: 22px;font-weight: 600;}
+#section .userIcon,#section .passwordIcon{width: 16px;height: 18px;float: left;margin-top: 12px;}
+#section .userIcon{background: url("../img/userIcon.png") no-repeat center;background-size: 100%}
+#section .passwordIcon{background: url("../img/passwordIcon.png") no-repeat center;background-size: 100%}
+#section .active .userIcon{background: url("../img/userIcon1.png") no-repeat center;background-size: 100%}
+#section .active .passwordIcon{background: url("../img/passwordIcon1.png") no-repeat center;background-size: 100%}
+#section .active{border: 1px solid #1fa2e7!important;}
+#section .remenber{margin-left: 5px;color: #999999;font-size: 12px;display: inline-block}
+#footer{font-size: 12px;color: #4a4a4a;width: 100%;text-align: center;margin: 20px auto;min-width: 1100px;}
+#section .icheckbox_square-blue, .iradio_square-blue{width: 13px;height: 13px;background-size: cover;}
+#section .icheckbox_square-blue.hover {
+    background-position: -13px 0;
+}
+#section .icheckbox_square-blue.checked {
+    background-position: -26px 0;
+}

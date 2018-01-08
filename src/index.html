@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>首页</title>
+    <link rel="stylesheet" href="./res/css/H-ui.reset.css"/>
+    <link rel="stylesheet" href="./res/css/index.css"/>
+    <link href="./res/skins/square/blue.css" rel="stylesheet">
+    <script src="./res/js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+<div id="header" class="cl">
+    <div class="container">
+        <div class="l">
+            <img src="./res/img/logo.png" alt="" id="logo"/>
+        </div>
+    </div>
+</div>
+<div id="section">
+    <div class="container">
+        <div class="boxBig">
+            <img src="./res/img/title.png" alt=""/>
+
+            <div class="boxSmall login">
+                <div class="title">
+                    <span>欢 迎 登 录</span>
+                </div>
+                <div class="con">
+                    <div class="username">
+                        <div class="userIcon"></div>
+                        <!--<img src="./res/img/userIcon.png" alt="" class="userIcon"/>-->
+                        <input type="text" placeholder="请输入用户名"/>
+                    </div>
+                    <div class="password">
+                        <div class="passwordIcon"></div>
+                        <!--<img src="./res/img/passwordIcon.png" alt="" class="passwordIcon"/>-->
+                        <input type="password" placeholder="请输入密码"/>
+                    </div>
+                    <div class="code">
+                        <input type="text" placeholder="请输入验证码"/><img src="./res/img/code.jpg" alt="" class="codeImg"/>
+                    </div>
+                    <div class="submit">
+                        登 录
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="container">
+        Copyright© 2014-2017 XXXXXXXX All Right Reserved.
+    </div>
+</div>
+<script src="./res/js/icheck.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('input').iCheck({
+            checkboxClass: 'icheckbox_square-blue',
+            increaseArea: '20%' // optional
+        });
+    });
+</script>
+<script>
+    $('.username input,.password input').focus(function () {
+        $('.active').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+    $('.code input').focus(function () {
+        $('.active').removeClass('active');
+        $(this).addClass('active');
+    });
+    //        var h=document.documentElement.clientHeight-150;
+    //        $('#section').css('height',h)
+</script>
+</body>
+</html>
